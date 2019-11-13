@@ -1,6 +1,6 @@
 # CLIPS
 
-This repository contains a snaphot of the CLIPS rules engine, taken from http://clipsrules.sourceforge.net/ and https://sourceforge.net/projects/clipsrules/
+This repository contains a snaphot of the [CLIPS rules engine](http://www.clipsrules.net/), taken from http://clipsrules.sourceforge.net/ and https://sourceforge.net/projects/clipsrules/
 
 This repository is intended to keep the fully functional 6.31 version of CLIPS (in November 2019) under github and serve as a basis for future developments based on this and ensure the availability of its source code.
 
