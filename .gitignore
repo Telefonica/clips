@@ -1,2 +1,8 @@
 #IDEA IDE
 .idea
+
+# Distribution / packaging
+dist/
+
+# Object compiled files fro linux distro
+branches/63x/core/*.[ao]
