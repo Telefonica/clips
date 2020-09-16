@@ -2,7 +2,8 @@
 .idea
 
 # Distribution / packaging
-dist/
+dist_temp/
+artifactory/
 
 # Object compiled files fro linux distro
 branches/63x/core/*.[ao]
