@@ -49,4 +49,3 @@ version_artifactory_dir="${FINAL_ARTIFACT_FOLDER}/${CURRENT_LOCAL_VERSION}"
 mkdir -p "${version_artifactory_dir}"
 
 dpkg-deb --build "${PACKAGE_TEMP_FOLDER}" "${version_artifactory_dir}"
-# TODO Change to use CPACK
