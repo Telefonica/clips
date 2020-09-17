@@ -1,0 +1,9 @@
+#IDEA IDE
+.idea
+
+# Distribution / packaging
+dist_temp/
+artifactory/
+
+# Object compiled files from linux distro
+branches/63x/core/*.[ao]
