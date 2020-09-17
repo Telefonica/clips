@@ -5,5 +5,5 @@
 dist_temp/
 artifactory/
 
-# Object compiled files fro linux distro
+# Object compiled files from linux distro
 branches/63x/core/*.[ao]
