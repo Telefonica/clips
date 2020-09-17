@@ -1,4 +1,8 @@
 #!/bin/bash
+
+set -e
+set -x
+
 SCRIPT_FOLDER="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 PACKAGE_NAME="clips"
