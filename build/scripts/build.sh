@@ -42,7 +42,7 @@ Version: ${CURRENT_LOCAL_VERSION}
 Section: libs
 Priority: optional
 Architecture: ${ARCHITECTURE}
-Installed-Size: 1353520
+Installed-Size: 1200928
 Maintainer: Victor Cordero
 Description: Linux compiled fully functional 6.31 version of CLIPS (in November 2019)" > "${DEBIAN_CONTROL_FILE_PATH}"
 

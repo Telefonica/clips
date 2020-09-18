@@ -2,7 +2,7 @@
 .idea
 
 # Distribution / packaging
-dist_temp/
+unpacked/
 artifactory/
 
 # Object compiled files from linux distro
