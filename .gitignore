@@ -3,7 +3,7 @@
 
 # Distribution / packaging
 unpacked/
-artifactory/
+artifacts/
 
 # Object compiled files from linux distro
-branches/63x/core/*.[ao]
+branches/63x/core/*.[o]
