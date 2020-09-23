@@ -2,8 +2,8 @@
 .idea
 
 # Distribution / packaging
-dist_temp/
-artifactory/
+unpacked/
+artifacts/
 
 # Object compiled files from linux distro
-branches/63x/core/*.[ao]
+branches/63x/core/*.[o]

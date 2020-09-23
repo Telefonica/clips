@@ -58,7 +58,13 @@ OBJS = agenda.o analysis.o argacces.o bload.o bmathfun.o bsave.o \
  	tmpltbin.o tmpltbsc.o tmpltcmp.o tmpltdef.o tmpltfun.o tmpltlhs.o \
  	tmpltpsr.o tmpltrhs.o tmpltutl.o userdata.o userfunctions.o utility.o watch.o
 
-all: release
+# all: release
+
+# Flags and libs extracted from https://github.com/noxdafox/clipspy/blob/master/Makefile commit 90d7181 on 11 Apr
+all : CC = gcc
+all : CFLAGS = -std=c99 -O3 -fno-strict-aliasing -fPIC
+all : LDLIBS = -lm -lrt
+all : clips
 
 debug : CC = gcc
 debug : CFLAGS = -std=c99 -O0 -g
@@ -89,16 +95,19 @@ release_cpp : clips
 .c.o :
 	$(CC) -c -D$(CLIPS_OS) $(CFLAGS) $(WARNINGS) $<
 
-clips : main.o libclips.a
+clips : main.o libclips.a libclips.so
 	$(CC) -o clips main.o -L. -lclips $(LDLIBS)
 	
 libclips.a : $(OBJS)
 	rm -f $@   
 	ar cq $@ $(OBJS)   
 
+libclips.so : $(OBJS)
+	ld -G $(OBJS) -o $@
+
 clean : 
 	-rm -f main.o $(OBJS)
-	-rm -f clips libclips.a
+	-rm -f clips libclips.a libclips.so
 	
 .PHONY : all clips clean debug release debug_cpp release_cpp
 
