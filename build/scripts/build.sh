@@ -83,7 +83,9 @@ echo "* Generate artefacts *"
 echo "*********************"
 
 # https://linuxconfig.org/easy-way-to-create-a-debian-package-and-local-package-repository
+if [ -d "${UNPACKED_TEMP_FOLDER}" ]; then rm -Rf "${UNPACKED_TEMP_FOLDER}"; fi
 mkdir "${UNPACKED_TEMP_FOLDER}"
+if [ -d "${FINAL_ARTIFACT_FOLDER}" ]; then rm -Rf "${FINAL_ARTIFACT_FOLDER}"; fi
 mkdir "${FINAL_ARTIFACT_FOLDER}"
 
 # CLIPS building package

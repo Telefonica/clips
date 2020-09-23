@@ -23,6 +23,7 @@ cd "${SOURCE_CODE_FOLDER}"
 make clean # remove previous compiled object files and executables as clips
 make all # gcc -o clips main.o -L. -lclips -lm, a direct way without show logs would be "gcc -o clips -DLINUX *.c -lm"
 
+if [ -d "${UNPACKED_TEMP_FOLDER}" ]; then rm -Rf "${UNPACKED_TEMP_FOLDER}"; fi
 mkdir "${UNPACKED_TEMP_FOLDER}"
 
 # CLIPS executable
